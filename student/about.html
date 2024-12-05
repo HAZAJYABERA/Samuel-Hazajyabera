@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABOUT</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    /* Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('./images/b.jpg'); /* Fixed background image URL */
+      background-size: cover; /* Adjust background size */
+      background-repeat: no-repeat; /* Prevent background repeat */
+    }
+
+    header {
+      background-color: orange;
+      color: white;
+      padding: 20px;
+      text-decoration: underline;
+      text-align: center;
+    }
+
+    header img.logo {
+      width: px;
+      height: auto;
+    }
+
+    .logout {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      color: green;
+      background-color: #cc0000;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    .logout:hover {
+      background-color: #990000;
+    }
+
+    section {
+      padding: 20px;
+      background-color: lightgray;
+      text-align: center;
+      margin: 300px; /* Added margin for spacing */
+      border-radius: 10px; /* Added border radius for styling */
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px; /* Adjusted padding for footer */
+      background-color: orange;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    /* Link Styles */
+    a {
+      padding: 7px;
+      color: white;
+      background-color: blue;
+      text-decoration: none;
+      margin-right: 5px;
+    }
+
+    /* Dropdown Styles */
+    .dropdown {
+      display: inline;
+      margin-right: 10px;
+    }
+.dropdown-contents {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-contents {
+      display: block;
+    }
+
+    .dropdown-contents a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: black;
+    }
+    .dropdown-contents a:hover {
+      background-color: #ddd;
+    }
+    .search-form {
+      position: fixed;
+      top: 20px;
+      left: 50px;
+      z-index: 700; /* Ensure search bar appears above other content */
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <ul style="list-style-type: none; padding: 0;">
+      <li style="display: inline; margin-right: 10px;">
+        <a href="./home.html">HOME</a>
+      </li>
+      <li style="display: inline; margin-right: 10px;">
+        <a href="./about.html">ABOUT</a>
+      </li>
+      <li style="display: inline; margin-right: 10px;">
+        <a href="./contact.html">CONTACT</a>
+      </li>
+
+        <div class="dropdown-contents">
+          <!-- Links inside the dropdown menu -->
+          <a href="./users.php">USERS</a>
+          <a href="./admin.php">ADMIN</a>
+          <a href="./student.php.php">STUDENT</a>
+          <a href="./courses.php">COURSES</a>
+          <a href="./enrollment.php">ENROLLMENT</a>
+          <a href="./grades.php">GRADES</a>
+          
+        </div>
+      </li>
+    </ul>
+    <!-- LOG OUT button -->
+    <a class="logout" href="logout.php">LOG OUT</a>
+  </header>
+
+  <section>
+    <h2 style="color: blue;"><bold><u>ABOUT STUDENT MANAGEMENT SYSTEM</h1>
+      <p><h3 style="color: black;">Student Management System aims to address the limitations of the current
+      system by introducing a comprehensive and efficient solution. Here is an overview of how the
+      proposed system will work:
+      1. Centralized Database: The proposed system will have a centralized database that stores all
+      student information in a structured and organized manner. This database will serve as a single
+      source of truth for student data, ensuring data consistency and integrity.
+      2. User Roles and Access Control: The system will implement role-based access control,
+      granting different levels of access to administrators, teachers, students, and parents based on
+      their roles and responsibilities.</p>
+      <h2 style="color: blue;"><bold><u> WHAT DO WE DO</u></bold></h2>
+
+<p><h3 style="color: black;">Designing a student management system. The onlin
+student management system improve the skills of the many peaple on technology
+for online servises. 
+</h3></p>
+  </section>
+
+  <footer>
+    <i style="color: white;">&copy; 2024 Samuel HAZAJYABERA 222003581</i>
+  </footer>
+</body>
+</html>

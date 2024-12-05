@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    /* Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('./images/n.jpg'); /* Fixed background image URL */
+      background-size: cover; /* Adjust background size */
+      background-repeat: no-repeat; /* Prevent background repeat */
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: lightblue;
+    }
+
+    header {
+      background-color: #333333;
+      color: #ffffff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 15px;
+    }
+
+    nav ul li a {
+      padding: 10px 20px;
+      color: #ffffff;
+      background-color: blue;
+      text-decoration: none;
+      margin-right: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: #004080;
+    }
+
+    .logout {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      color: #ffffff;
+      background-color: #cc0000;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .logout:hover {
+      background-color: #990000;
+    }
+
+    section {
+      padding: 20px;
+      border-bottom: 3px solid #ddd;
+    }
+
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+      width: 90%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      background-color: #0066cc;
+      color: #ffffff;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #004080;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    p a {
+      color: turquoise;
+      text-decoration: none;
+      margin-right: 10px;
+    }
+
+    p a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 5px;
+      background-color: red;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    /* Social Media Icons */
+    .social-media {
+      text-align: center;
+    }
+
+    .social-icons {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .social-icons li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .social-icons li:last-child {
+      margin-right: 0;
+    }
+
+    .social-icons a img {
+      width: 40px;
+      height: auto;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Contact Us</h1>
+  
+
+  <nav>
+    <ul>
+      <li><a href="./home.html">HOME</a></li>
+      <li><a href="./about.html">ABOUT</a></li>
+      <li><a href="./contact.html">CONTACT</a></li>
+      <li><a href="./srvice.html">SERVICE</a></li>
+      <li class="dropdown">
+        <a href="#">TABLES</a>
+        <div class="dropdown-contents">
+          <a href="./users.php">USERS</a>
+          <a href="./admin.php">ADMIN</a>
+          <a href="./courses.php">COURSES</a>
+          <a href="./enrollment.php">ENROLLMENT</a>
+          <a href="./grades.php">GRADES</a>
+          <a href="./students.php">STUDENTS</a>
+          
+        </div>
+      </li>
+    </ul>
+    <div class="search-form">
+      <!-- Search form -->
+      <form role="search" action="search.php">
+        <input class="form-control" type="search" placeholder="search" aria-label="search" name="query">
+        <button class="btn" type="submit">search</button>
+      </form>
+    </div>
+    <!-- LOG OUT button -->
+    <a class="logout" href="logout.php">LOG OUT</a>
+  </nav>
+</header>
+  <section>
+    <h2>Contact Information</h2>
+    <ul>
+      <li><strong>Address:</strong> 105 Kigali, MUSANZE, City</li>
+      <li><strong>Phone:</strong> +250 782345698</li>
+      <li><strong>Email:</strong>hazajyaberasamuel1@gmail.com</li>
+    </ul>
+
+    <h2>Send Us a Message</h2>
+    <form action="submit_contact.php" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone">
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <input type="submit" value="Send">
+    </form>
+
+    <div class="social-media">
+      <p>CONNECT WITH US ON SOCIAL MEDIA:</p>
+      <ul class="social-icons">
+        <li><a href="https://www.twitter.com/stockmgt"><img src="twitter_icon.png" alt="Twitter"></a></li>
+        <li><a href="https://www.facebook.com/stockmgt"><img src="facebook_icon.png" alt="Facebook"></a></li>
+        <li><a href="https://www.instagram.com/stockmgt"><img src="instagram_icon.png" alt="Instagram"></a></li>
+        <li><a href="https://www.linkedin.com/stockmgt"><img src="linkedin_icon.png" alt="LinkedIn"></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Web Technology EXAM</p>
+  </footer>
+</body>
+</html>

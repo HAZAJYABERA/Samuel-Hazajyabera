@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOME</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    /* Global Styles */
+    a {
+      padding: 7px;
+      color: white;
+      background-color: blue;
+      text-decoration: none;
+      margin-right: 5px;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: url('./images/x.Jpg') center/cover no-repeat;
+      color: #FFFFFF; /* White */
+      background-blend-mode: overlay;
+      height: 100vh;
+    }
+
+    header {
+      background-color: orange;
+      color: orange;
+      padding: 20px;
+      text-decoration: underline;
+      text-align: center;
+    }
+
+    header img.logo {
+      width: 100px;
+      height: auto;
+    }
+
+    .logout {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      color: green;
+      background-color: #cc0000;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    .logout:hover {
+      background-color: #990000;
+    }
+
+    .additional-phrases p {
+      margin: 10px 0;
+      font-size: 30px; /* Increased font size */
+    }
+
+    /* Specific Styles */
+    nav {
+      background-color: #0066cc;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      color: #ffffff;
+      text-decoration: none;
+      padding: 10px 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: #004080;
+    }
+
+    .search-form {
+      position: fixed;
+      top: 20px;
+      left: 50px;
+      z-index: 700; /* Ensure search bar appears above other content */
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: none;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+  <!-- JavaScript function for insert confirmation -->
+  <script>
+    function confirmInsert() {
+      return confirm("Are you sure you want to insert this record?");
+    }
+  </script>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <ul style="list-style-type: none; padding: 0;">
+      <li style="display: inline; margin-right: 10px;">
+        <a href="./home.html">HOME</a>
+      </li>
+      <li style="display: inline; margin-right: 10px;">
+        <a href="./about.html">ABOUT</a>
+      </li>
+      <li style="display: inline; margin-right: 10px;">
+        <a href="./contact.html">CONTACT</a>
+      </li>
+       <li style="display: inline; margin-right: 10px;">
+        <a href="./servise.html">SERVICES</a>
+      </li>
+      <li class="dropdown" style="display: inline; margin-left: 10px;">
+        <a href="#" style="padding: 10px;">TABLES</a>
+        <div class="dropdown-contents">
+          <!-- Links inside the dropdown menu -->
+          <a href="./users.php">USERS</a>
+          <a href="./admin.php">ADMIN</a>
+          <a href="./student.php.php">STUDENT</a>
+          <a href="./courses.php">COURSES</a>
+          <a href="./enrollment.php">ENROLLMENT</a>
+          <a href="./grades.php">GRADES</a>
+          
+          
+        </div>
+      </li>
+    </ul>
+    <div class="search-form">
+      <!-- Search form -->
+      <form role="search" action="search.php">
+        <input class="form-control" type="search" placeholder="search" aria-label="search" name="query">
+        <button class="btn" type="submit">search</button>
+      </form>
+    </div>
+    <!-- LOG OUT button -->
+    <a class="logout" href="logout.php">LOG OUT</a>
+  </header>
+
+  <!-- Main Content Section -->
+  <center id="home" style="display: block;">
+    <marquee><h1 style="color: brown;">WELCOME TO STUDENT MANAGEMENT SYSTEM </h1></marquee>
+  </center>
+  <div class="additional-phrases">
+<h2 style="color: beige;">
+ <p><u style="color:greenyellow;">Some specific purposes and objectives of a student management system project:</u></p></h2>
+<ol type="number">
+<li><b>Online Regstration:</b></li>           
+<li><b>Online Learning:</b></li>               
+<li><b>Online Class:</b></li>              
+<li><b>Onlin Attendance:</b></li>
+<li><b>Online Class:</b></li>
+<li><b>online Library:</b></li>                
+</ol>
+
+  <!-- Footer Section -->
+  <footer>
+    <center><i style="color: white;">&copy; 2024 HAZAJYABERA SAMUEL 222003581</i></center> 
+  </footer>
+</body>
+</html>
